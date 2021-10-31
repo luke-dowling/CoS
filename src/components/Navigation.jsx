@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 // bootstrap
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 
@@ -11,7 +13,9 @@ export const Navigation = () => {
           <Nav className="me-auto">
             <Nav.Link href="/cos">Home</Nav.Link>
 
-            <Nav.Link href="/cos/start">Start</Nav.Link>
+            <Nav.Link>
+              <Link to="/cos/start">Start</Link>
+            </Nav.Link>
 
             <NavDropdown title="Episode" id="basic-nav-dropdown">
               <NavDropdown.Item href="/cos/episode-one">
