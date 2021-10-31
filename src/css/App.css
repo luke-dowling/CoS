@@ -26,6 +26,15 @@ li {
 
 .link {
   text-decoration: none;
+  color: inherit;
+}
+
+.link:hover {
+  color: inherit;
+}
+
+.dropdown-item:active {
+  background: red;
 }
 
 .handWriting {

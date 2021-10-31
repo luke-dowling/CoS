@@ -11,15 +11,23 @@ export const Navigation = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/cos">Home</Nav.Link>
+            <Nav.Link>
+              <Link to="/cos" className="link">
+                Home
+              </Link>
+            </Nav.Link>
 
             <Nav.Link>
-              <Link to="/cos/start">Start</Link>
+              <Link to="/cos/start" className="link">
+                Start
+              </Link>
             </Nav.Link>
 
             <NavDropdown title="Episode" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/cos/episode-one">
-                Episode One
+              <NavDropdown.Item>
+                <Link to="/cos/episode-one" className="link">
+                  Episode One
+                </Link>
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
